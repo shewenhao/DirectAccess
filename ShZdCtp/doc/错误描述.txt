@@ -1,0 +1,97 @@
+行情：
+错误代码       错误描述
+1			init Socket Version error
+2			bulid Socket  error
+3			socket connect failed
+4			connect exception
+5			please login first;Ask Format Error 
+6			please login first;unAsk Format Error
+7			send user login info failed
+8			WSARecvFrom error exit thread
+9			resend user info failed
+10			connection closed,now reconnection
+11			reconnection failed
+12          no author ask cme market  CME
+13			no author ask cme market  CME_COMEX
+14			no author ask cme market  CME_NYMEX
+15			no author ask CME_CBT market
+16			no author ask NYBOT,eCBOT  market
+17			no author ask ICE market
+18			no author ask Liffe market
+
+1005       在你登陆前，有其他用户使用该登陆代码登陆，请注意
+1008	   其他用户使用该登陆代码登陆，你将被踢出交易
+10001	   用户名不正确
+10002	   登陆密码错误
+10003	   密码错误次数超限，用户已冻结，请联系客服解冻
+10004      用户登陆错误
+10006      无接口登陆权限
+10007      接口使用时限过期	
+2044       Login userCode not the auth userCode
+2045       API未注册
+
+交易：	
+1		  init Socket Version error
+2		  bulid Socket  error
+3		  socket connect failed
+4		  connect exception
+8		  WSARecvFrom error exit thread
+9		  resend user info failed
+10		  connection closed,now reconnection
+11        reconnection failed
+
+1005      在你登陆前，有其他用户使用该登陆代码登陆，请注意
+1008      其他用户使用该登陆代码登陆，你将被踢出交易
+10001     用户名不正确
+10002     登陆密码错误
+10003     密码错误次数超限，用户已冻结，请联系客服解冻
+10004     用户登陆错误
+10006     无接口登陆权限
+10007     接口使用时限过期
+20000     报单错误
+20001     资金不足
+20002     交易服务器未连接
+20003     您已被禁止交易，请联系客服解禁
+20004     下单被拒绝
+20005     系统号生成失败
+20006     您的资金账户中没有该合约交易所需的币种
+20007     该合约已经到期，不能交易
+20008     该交易市场未开市，不能交易
+20009     该交易市场已闭市，不能交易
+20010     下单价格超出限定范围
+20011     下单数量过大
+20012     您被禁止交易该合约，请联系客服
+20013     您的资金账户风险率过高，已被禁止交易
+20015     您的账户交易数据出现异常，暂停交易
+20019     下单数量超过客户持仓限量
+20020     下单数量超过客户可下单买量
+20021     下单数量超过客户可下单卖量
+20022	  下单数量超过公司持仓限量
+20023     下单数量超过公司可下单买量
+20024     下单数量超过公司可下单卖量
+20025     Dealer下单数量超过最大可下单数量
+20026     合约临近交割，只可平仓，不能开仓
+20027     该合约已过最后交易日时间，禁止电子盘交易
+20028     商品未开放，禁止交易
+20029     单笔下单数量超过该商品单笔最大可下单数
+20030     条件单设置失败
+20031     条件单删除失败
+20032     持仓不足，平仓失败
+20033     您不能交易该商品,请联系客服开通
+20014     撤单错误  该订单已成交或已撤单，请确认
+20016     改单错误
+20034     系统号生成失败
+20035     用户旧密码错误
+1009      pass word modify failed
+2036      order user error
+2037      order action user error
+2038      input order ask  user error
+2039      filled order ask  user error
+2040      hold order ask  user error
+2041      user money  ask  user error
+2042      hold detail order ask  user error
+2043      inout money ask  user error
+2044      Login userCode not the auth userCode
+2045      API未注册
+
+

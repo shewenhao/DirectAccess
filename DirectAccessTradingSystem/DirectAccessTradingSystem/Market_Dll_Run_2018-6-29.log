@@ -1,0 +1,39 @@
+2018-7-29 14:45:37 85 |RegisterFront sucess RunThread!
+2018-7-29 14:45:38 338 |ReceiveDataThreadProc Run
+2018-7-29 14:50:2 243 |RegisterFront sucess RunThread!
+2018-7-29 14:50:2 244 |ReceiveDataThreadProc Run
+2018-7-29 14:50:45 231 |RegisterFront sucess RunThread!
+2018-7-29 14:50:45 232 |ReceiveDataThreadProc Run
+2018-7-29 14:50:50 232 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 14:52:13 785 |RegisterFront sucess RunThread!
+2018-7-29 14:52:13 786 |ReceiveDataThreadProc Run
+2018-7-29 14:52:18 787 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 15:28:22 980 |RegisterFront sucess RunThread!
+2018-7-29 15:28:22 981 |ReceiveDataThreadProc Run
+2018-7-29 15:28:44 451 |RegisterFront sucess RunThread!
+2018-7-29 15:28:44 452 |ReceiveDataThreadProc Run
+2018-7-29 15:28:49 452 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 16:29:28 681 |RegisterFront sucess RunThread!
+2018-7-29 16:29:28 682 |ReceiveDataThreadProc Run
+2018-7-29 16:29:33 682 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 16:30:39 379 |RegisterFront sucess RunThread!
+2018-7-29 16:30:39 379 |ReceiveDataThreadProc Run
+2018-7-29 16:30:44 380 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 16:32:25 129 |RegisterFront sucess RunThread!
+2018-7-29 16:32:25 130 |ReceiveDataThreadProc Run
+2018-7-29 16:32:30 131 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 16:34:28 271 |RegisterFront sucess RunThread!
+2018-7-29 16:34:28 273 |ReceiveDataThreadProc Run
+2018-7-29 16:34:33 272 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 16:36:42 654 |RegisterFront sucess RunThread!
+2018-7-29 16:36:42 655 |ReceiveDataThreadProc Run
+2018-7-29 16:36:47 655 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 16:42:45 294 |RegisterFront sucess RunThread!
+2018-7-29 16:42:45 294 |ReceiveDataThreadProc Run
+2018-7-29 16:42:50 294 |ask market:MARKET01@@@+@@@@@&LME,NI3M
+2018-7-29 20:51:47 309 |WSARecvFrom error exit thread!:
+2018-7-29 20:51:47 310 |WSARecvFrom error exit thread
+2018-7-29 20:51:57 92 |ReceiveDataThreadProc Run
+2018-7-29 20:54:53 705 |RegisterFront sucess RunThread!
+2018-7-29 20:54:53 706 |ReceiveDataThreadProc Run
+2018-7-29 20:54:58 706 |ask market:MARKET01@@@+@@@@@&LME,NI3M
