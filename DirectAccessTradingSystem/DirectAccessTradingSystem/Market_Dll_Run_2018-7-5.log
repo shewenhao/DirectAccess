@@ -1,0 +1,24 @@
+2018-8-4 24:21:50 562 |RegisterFront sucess RunThread!
+2018-8-4 24:21:50 563 |ReceiveDataThreadProc Run
+2018-8-4 24:21:55 564 |ask market:MARKET01@@@+@@@@@&LME,SN3M
+2018-8-5 8:40:5 636 |WSARecvFrom error exit thread!:
+2018-8-5 8:40:6 268 |WSARecvFrom error exit thread
+2018-8-5 8:40:23 416 |ReceiveDataThreadProc Run
+2018-8-5 9:0:42 204 |RegisterFront sucess RunThread!
+2018-8-5 9:0:42 207 |ReceiveDataThreadProc Run
+2018-8-5 9:0:47 207 |ask market:MARKET01@@@+@@@@@&LME,SN3M
+2018-8-5 10:8:57 202 |WSARecvFrom error exit thread!:
+2018-8-5 10:8:57 205 |WSARecvFrom error exit thread
+2018-8-5 10:9:7 75 |ReceiveDataThreadProc Run
+2018-8-5 10:9:52 104 |RegisterFront sucess RunThread!
+2018-8-5 10:9:52 105 |ReceiveDataThreadProc Run
+2018-8-5 10:9:57 104 |ask market:MARKET01@@@+@@@@@&LME,SN3M
+2018-8-5 12:31:15 284 |WSARecvFrom error exit thread!:
+2018-8-5 12:31:15 517 |WSARecvFrom error exit thread
+2018-8-5 12:31:27 211 |ReceiveDataThreadProc Run
+2018-8-5 21:5:0 995 |RegisterFront sucess RunThread!
+2018-8-5 21:5:1 14 |ReceiveDataThreadProc Run
+2018-8-5 21:5:5 996 |ask market:MARKET01@@@+@@@@@&LME,SN3M
+2018-8-5 31:47:22 584 |WSARecvFrom error exit thread!:
+2018-8-5 31:47:26 98 |WSARecvFrom error exit thread
+2018-8-5 31:47:36 658 |ReceiveDataThreadProc Run

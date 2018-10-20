@@ -1,9 +1,11 @@
-﻿Build started 2018/6/29 16:42:36.
+﻿Build started 2018/10/20 14:24:28.
      1>Project "D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\DirectAccessTradingSystem\DirectAccessTradingSystem.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Coding_Applications\VisualStudio2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DirectAccessTradingSystem.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DirectAccessTradingSystem.cpp
+         D:\Coding_Applications\VisualStudio2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DirectAccessTradingSystem.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DirectAccessTradingSystem.cpp
          DirectAccessTradingSystem.cpp
-     1>d:\coding_applications\codes\github\directaccess\directaccesstradingsystem\directaccesstradingsystem\directaccesstradingsystem.cpp(380): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\coding_applications\codes\github\directaccess\directaccesstradingsystem\directaccesstradingsystem\directaccesstradingsystem.cpp(116): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\coding_applications\visualstudio2013\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>d:\coding_applications\codes\github\directaccess\directaccesstradingsystem\directaccesstradingsystem\directaccesstradingsystem.cpp(427): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\coding_applications\visualstudio2013\vc\include\stdio.h(356) : see declaration of 'sprintf'
        Link:
          D:\Coding_Applications\VisualStudio2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\Debug\DirectAccessTradingSystem.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\Debug\DirectAccessTradingSystem.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\Debug\DirectAccessTradingSystem.lib" /MACHINE:X86 Debug\DirectAccessTradingSystem.obj
@@ -17,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.96
+Time Elapsed 00:00:02.40

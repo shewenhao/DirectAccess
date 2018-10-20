@@ -1,0 +1,3 @@
+2018-9-15 13:55:35 307 |RegisterFront sucess RunThread!
+2018-9-15 13:55:35 307 |ReceiveDataThreadProc Run
+2018-9-15 13:55:40 311 |ask market:MARKET01@@@+@@@@@&LME,SN3M;LME,CA3M;LME,AH3M;LME,ZS3M;LME,NI3M;LME,PB3M;SGX,CN1808

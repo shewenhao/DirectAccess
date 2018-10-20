@@ -1,0 +1,21 @@
+2018-8-24 12:10:3 592 |RegisterFront sucess RunThread!
+2018-8-24 12:10:3 593 |ReceiveDataThreadProc Run
+2018-8-24 12:10:8 594 |ask market:MARKET01@@@+@@@@@&LME,SN3M;LME,CA3M;LME,AH3M;LME,ZS3M;LME,NI3M;LME,PB3M
+2018-8-24 12:11:58 742 |RegisterFront sucess RunThread!
+2018-8-24 12:11:58 743 |ReceiveDataThreadProc Run
+2018-8-24 12:12:3 743 |ask market:MARKET01@@@+@@@@@&LME,SN3M;LME,CA3M;LME,AH3M;LME,ZS3M;LME,NI3M;LME,PB3M
+2018-8-24 12:43:16 637 |RegisterFront sucess RunThread!
+2018-8-24 12:43:16 637 |ReceiveDataThreadProc Run
+2018-8-24 12:43:21 637 |ask market:MARKET01@@@+@@@@@&SGX,CN
+2018-8-24 12:43:55 626 |RegisterFront sucess RunThread!
+2018-8-24 12:43:55 626 |ReceiveDataThreadProc Run
+2018-8-24 12:44:0 626 |ask market:MARKET01@@@+@@@@@&SGX,CN1808
+2018-8-24 12:45:36 393 |RegisterFront sucess RunThread!
+2018-8-24 12:45:36 394 |ReceiveDataThreadProc Run
+2018-8-24 12:45:41 394 |ask market:MARKET01@@@+@@@@@&SGX,CN1808
+2018-8-24 12:46:28 62 |RegisterFront sucess RunThread!
+2018-8-24 12:46:28 63 |ReceiveDataThreadProc Run
+2018-8-24 12:46:33 63 |ask market:MARKET01@@@+@@@@@&LME,SN3M;LME,CA3M;LME,AH3M;LME,ZS3M;LME,NI3M;LME,PB3M
+2018-8-24 12:47:44 304 |RegisterFront sucess RunThread!
+2018-8-24 12:47:44 305 |ReceiveDataThreadProc Run
+2018-8-24 12:47:49 304 |ask market:MARKET01@@@+@@@@@&LME,SN3M;LME,CA3M;LME,AH3M;LME,ZS3M;LME,NI3M;LME,PB3M;SGX,CN1808

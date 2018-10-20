@@ -1,0 +1,9 @@
+2018-8-10 8:50:30 360 |RegisterFront sucess RunThread!
+2018-8-10 8:50:30 361 |ReceiveDataThreadProc Run
+2018-8-10 8:50:35 360 |ask market:MARKET01@@@+@@@@@&LME,SN3M
+2018-8-10 22:1:57 370 |RegisterFront sucess RunThread!
+2018-8-10 22:1:57 371 |ReceiveDataThreadProc Run
+2018-8-10 22:2:2 371 |ask market:MARKET01@@@+@@@@@&LME,SN3M
+2018-8-10 22:5:35 236 |RegisterFront sucess RunThread!
+2018-8-10 22:5:35 244 |ReceiveDataThreadProc Run
+2018-8-10 22:5:40 237 |ask market:MARKET01@@@+@@@@@&LME,SN3M

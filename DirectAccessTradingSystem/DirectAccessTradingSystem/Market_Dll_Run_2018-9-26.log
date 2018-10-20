@@ -1,0 +1,12 @@
+2018-10-26 14:30:41 456 |RegisterFront sucess RunThread!
+2018-10-26 14:30:41 457 |ReceiveDataThreadProc Run
+2018-10-26 14:30:46 457 |ask market:MARKET01@@@+@@@@@&LME,L-ZS3M;LME,SN3M;LME,CA3M;LME,AH3M;LME,L-ZS3M;LME,NI3M;LME,PB3M;SGX,CN1808
+2018-10-26 18:53:48 39 |WSARecvFrom error exit thread!:
+2018-10-26 18:53:48 81 |WSARecvFrom error exit thread
+2018-10-26 18:53:54 940 |ReceiveDataThreadProc Run
+2018-10-26 21:36:33 950 |WSARecvFrom error exit thread!:
+2018-10-26 21:36:33 956 |WSARecvFrom error exit thread
+2018-10-26 21:36:41 720 |ReceiveDataThreadProc Run
+2018-10-26 22:0:4 458 |RegisterFront sucess RunThread!
+2018-10-26 22:0:4 461 |ReceiveDataThreadProc Run
+2018-10-26 22:0:9 459 |ask market:MARKET01@@@+@@@@@&LME,L-ZS3M;LME,SN3M;LME,CA3M;LME,AH3M;LME,L-ZS3M;LME,NI3M;LME,PB3M;SGX,CN1808

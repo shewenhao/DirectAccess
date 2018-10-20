@@ -1,0 +1,24 @@
+﻿Build started 2018/10/20 12:19:04.
+     1>Project "D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\DirectAccessTradingSystem\DirectAccessTradingSystem.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Coding_Applications\VisualStudio2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\DirectAccessTradingSystem.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DirectAccessTradingSystem.cpp
+         DirectAccessTradingSystem.cpp
+     1>DirectAccessTradingSystem.cpp(116): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Coding_Applications\VisualStudio2013\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>DirectAccessTradingSystem.cpp(427): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Coding_Applications\VisualStudio2013\VC\include\stdio.h(356) : see declaration of 'sprintf'
+       Link:
+         D:\Coding_Applications\VisualStudio2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\Release\DirectAccessTradingSystem.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\Release\DirectAccessTradingSystem.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\Release\DirectAccessTradingSystem.lib" /MACHINE:X86 /SAFESEH Release\DirectAccessTradingSystem.obj
+         Release\kdb_function.obj
+         Release\stdafx.obj
+         c.lib
+         ShZdFutureMarketApi.lib
+         ShZdFutureTradeApi.lib
+         Generating code
+         Finished generating code
+         DirectAccessTradingSystem.vcxproj -> D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\Release\DirectAccessTradingSystem.exe
+     1>Done Building Project "D:\Coding_Applications\Codes\Github\DirectAccess\DirectAccessTradingSystem\DirectAccessTradingSystem\DirectAccessTradingSystem.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.98

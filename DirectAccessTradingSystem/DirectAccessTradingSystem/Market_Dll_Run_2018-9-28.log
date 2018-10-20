@@ -1,0 +1,51 @@
+2018-10-28 9:40:47 403 |RegisterFront sucess RunThread!
+2018-10-28 9:40:47 403 |ReceiveDataThreadProc Run
+2018-10-28 9:40:52 403 |ask market:MARKET01@@@+@@@@@&LME,L-ZS3M;LME,SN3M;LME,CA3M;LME,AH3M;LME,L-ZS3M;LME,NI3M;LME,PB3M;SGX,CN1808
+2018-10-28 14:55:12 417 |WSARecvFrom error exit thread!:
+2018-10-28 14:55:12 446 |WSARecvFrom error exit thread
+2018-10-28 14:55:22 516 |ReceiveDataThreadProc Run
+2018-10-28 17:12:53 846 |WSARecvFrom error exit thread!:
+2018-10-28 17:12:53 848 |WSARecvFrom error exit thread
+2018-10-28 17:12:56 766 |ReceiveDataThreadProc Run
+2018-10-28 17:18:35 383 |WSARecvFrom error exit thread!:
+2018-10-28 17:18:35 384 |WSARecvFrom error exit thread
+2018-10-28 18:24:20 78 |ReceiveDataThreadProc Run
+2018-10-28 18:24:20 579 |WSARecvFrom error exit thread!:
+2018-10-28 18:24:20 581 |WSARecvFrom error exit thread
+2018-10-28 18:24:22 688 |ReceiveDataThreadProc Run
+2018-10-28 21:40:32 944 |WSARecvFrom error exit thread!:
+2018-10-28 21:40:33 16 |WSARecvFrom error exit thread
+2018-10-28 21:40:35 978 |ReceiveDataThreadProc Run
+2018-10-28 26:33:11 768 |WSARecvFrom error exit thread!:
+2018-10-28 26:33:11 770 |WSARecvFrom error exit thread
+2018-10-28 26:33:14 800 |ReceiveDataThreadProc Run
+2018-10-29 11:10:1 234 |WSARecvFrom error exit thread!:
+2018-10-29 11:10:1 300 |WSARecvFrom error exit thread
+2018-10-29 11:10:5 36 |ReceiveDataThreadProc Run
+2018-10-29 12:44:35 113 |WSARecvFrom error exit thread!:
+2018-10-29 12:44:35 115 |WSARecvFrom error exit thread
+2018-10-29 12:44:45 840 |ReceiveDataThreadProc Run
+2018-10-29 16:33:22 101 |WSARecvFrom error exit thread!:
+2018-10-29 16:33:22 126 |WSARecvFrom error exit thread
+2018-10-29 16:33:32 645 |ReceiveDataThreadProc Run
+2018-10-29 22:27:37 369 |WSARecvFrom error exit thread!:
+2018-10-29 22:27:37 370 |WSARecvFrom error exit thread
+2018-10-29 22:27:40 779 |ReceiveDataThreadProc Run
+2018-10-30 11:35:11 229 |WSARecvFrom error exit thread!:
+2018-10-30 11:35:11 232 |WSARecvFrom error exit thread
+2018-10-30 11:35:21 875 |ReceiveDataThreadProc Run
+2018-10-30 16:0:26 757 |WSARecvFrom error exit thread!:
+2018-10-30 16:0:26 759 |WSARecvFrom error exit thread
+2018-10-30 16:8:46 542 |ReceiveDataThreadProc Run
+2018-10-30 16:8:47 45 |WSARecvFrom error exit thread!:
+2018-10-30 16:8:47 46 |WSARecvFrom error exit thread
+2018-10-30 16:8:49 169 |ReceiveDataThreadProc Run
+2018-10-30 21:41:1 460 |WSARecvFrom error exit thread!:
+2018-10-30 21:41:2 945 |WSARecvFrom error exit thread
+2018-10-30 21:41:8 382 |ReceiveDataThreadProc Run
+2018-11-1 15:23:35 989 |WSARecvFrom error exit thread!:
+2018-11-1 15:23:38 124 |WSARecvFrom error exit thread
+2018-11-1 15:23:41 870 |ReceiveDataThreadProc Run
+2018-11-2 15:7:20 604 |WSARecvFrom error exit thread!:
+2018-11-2 15:7:20 614 |WSARecvFrom error exit thread
+2018-11-2 15:7:23 719 |ReceiveDataThreadProc Run

@@ -15,6 +15,10 @@
 #include <windows.h>
 #include <string>
 #include <cstdio>
+#include <chrono>  // chrono::system_clock
+#include <ctime>   // localtime
+#include <sstream> // stringstream
+#include <iomanip>
 
 using namespace std;
 using namespace kdb;
@@ -42,16 +46,16 @@ class MarketSpi :public CSHZdMarketSpi
 	void OnRtnFilledMarketData(CTShZdFilledDataField* pFilledMarketData);
 	void OnRtnDataInsertToKDB(CTShZdDepthMarketDataField *pDepthMarketData);
 	void OnkdbConnection();
+	string return_current_time_and_date();
 
 private: 
 	kdb::Connector kConnector;
 };
 
-
 void MarketSpi::OnFrontConnected()
 {
 	cout << "Info connected sucessed!" << endl;
-	kConnector.connect("localhost", 5000);
+	kConnector.connect("localhost", 5001);
 }
 
 void MarketSpi::OnFrontDisconnected(int nReason)
@@ -63,6 +67,7 @@ void MarketSpi::OnHeartBeatWarning(int nTimeLapse)
 {
 
 }
+
 void MarketSpi::OnRspUserLogin(CTShZdRspUserLoginField *pRspUserLogin, CTShZdRspInfoField *pRspInfo,
 	int nRequestID, bool bIsLast)
 {
@@ -82,21 +87,52 @@ void MarketSpi::OnRspError(CTShZdRspInfoField *pRspInfo, int nRequestID, bool bI
 {
 	cout << "error:" << pRspInfo->ErrorID << "===" << pRspInfo->ErrorMsg << endl;
 }
+
 void MarketSpi::OnRspSubMarketData(CTShZdSpecificInstrumentField *pSpecificInstrument, CTShZdRspInfoField *pRspInfo,
 	int nRequestID, bool bIsLast)
 {
 
 }
+
 void MarketSpi::OnRspUnSubMarketData(CTShZdSpecificInstrumentField *pSpecificInstrument, CTShZdRspInfoField *pRspInfo,
 	int nRequestID, bool bIsLast)
 {
 
 }
+
 void MarketSpi::OnRtnDepthMarketData(CTShZdDepthMarketDataField *pDepthMarketData)
 {
 	cout << "M:" << pDepthMarketData->ExchangeID << " " << pDepthMarketData->InstrumentID << " "
 		<< pDepthMarketData->TradingDay << " " << pDepthMarketData->AskPrice1 << " " << pDepthMarketData->UpdateTime << endl;
 	OnRtnDataInsertToKDB(pDepthMarketData);
+}
+
+string MarketSpi::return_current_time_and_date()
+{
+	auto now = std::chrono::system_clock::now();
+	auto in_time_t = std::chrono::system_clock::to_time_t(now);
+
+	std::stringstream ss;
+	ss << std::put_time(std::localtime(&in_time_t), "%Y.%m.%dD%X");
+	auto duration = now.time_since_epoch();
+
+	typedef std::chrono::duration<int, std::ratio_multiply<std::chrono::hours::period, std::ratio<8>
+	>::type> Days; /* UTC: +8:00 */
+	Days days = std::chrono::duration_cast<Days>(duration);
+	duration -= days;
+	auto hours = std::chrono::duration_cast<std::chrono::hours>(duration);
+	duration -= hours;
+	auto minutes = std::chrono::duration_cast<std::chrono::minutes>(duration);
+	duration -= minutes;
+	auto seconds = std::chrono::duration_cast<std::chrono::seconds>(duration);
+	duration -= seconds;
+	auto milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(duration);
+	duration -= milliseconds;
+	auto microseconds = std::chrono::duration_cast<std::chrono::microseconds>(duration);
+	duration -= microseconds;
+	auto nanoseconds = std::chrono::duration_cast<std::chrono::nanoseconds>(duration);
+	cout << (ss.str()).append(".").append(to_string(milliseconds.count())) << endl;
+	return (ss.str()).append(".").append(to_string(milliseconds.count()));
 }
 
 void MarketSpi::OnRtnDataInsertToKDB(CTShZdDepthMarketDataField *pDepthMarketData)
@@ -105,28 +141,40 @@ void MarketSpi::OnRtnDataInsertToKDB(CTShZdDepthMarketDataField *pDepthMarketDat
 	string date = pDepthMarketData->TradingDay;
 	string datesplit = "D";
 	string time = pDepthMarketData->UpdateTime;
+	string receivedate = return_current_time_and_date();
 	string symbol = pDepthMarketData->InstrumentID;
-	double buy1price = pDepthMarketData->BidPrice1;
-	double sell1price = pDepthMarketData->AskPrice1;
+	double bidprice1 = pDepthMarketData->BidPrice1;
+	int    bidvol1 = 1;
+	double askprice1 = pDepthMarketData->AskPrice1;
+	int    askvol1 = 1;
 
-	insertstring.append("`DAQuote insert (");
+	insertstring.append("`Quote insert (");
 	insertstring.append(date.substr(0, 4) + ".");
 	insertstring.append(date.substr(4, 2) + ".");
 	insertstring.append(date.substr(6, 2));
 	insertstring.append(datesplit);
 	insertstring.append(time.substr(1,8));
 	insertstring.append(";");
+	insertstring.append(receivedate);
+	insertstring.append(";");
 	insertstring.append("`");
 	insertstring.append(symbol);
 	insertstring.append(";");
-	insertstring.append(to_string(buy1price));
+	insertstring.append(to_string(bidprice1));
 	insertstring.append(";");
-	insertstring.append(to_string(sell1price));
+	insertstring.append(to_string(bidvol1));
 	insertstring.append(";");
-	insertstring.append(to_string(buy1price));
+	insertstring.append(to_string(askprice1));
 	insertstring.append(";");
-	insertstring.append(to_string(sell1price));
+	insertstring.append(to_string(askvol1));
 	insertstring.append(")");
+	if (symbol == "L-ZS3M")
+	{
+		insertstring.replace(insertstring.find("L-"), 1, "");
+		insertstring.replace(insertstring.find("-"), 1, "");
+	}
+	
+	
 
 	kConnector.sync(insertstring.c_str());
 }
@@ -139,7 +187,6 @@ void MarketSpi::OnRtnFilledMarketData(CTShZdFilledDataField* pFilledMarketData)
 }
 #pragma endregion
 //===================================================================================
-
 #pragma region  //交易的实现定义
 class TradeSpi :public CSHZdTraderSpi
 {
@@ -382,38 +429,50 @@ string IntToStr(int index)
 	return str;
 }
 
-
-
 int _tmain(int argc, _TCHAR* argv[])
 {
 	cout << "DirectAcces期货交易系统_旗舰版" << endl;
+	//string strategyAccountParampath = argv[1];
+	string strategyAccountParampath = "5001_SHANGHAI_ZHIDA_CONFIG.ini";
 	apiHandle = CSHZdMarketApi::CreateSHZdMarketApi("..\\MDflow\\", false);
+	ReadMessage readMessage;
+	memset(&readMessage, 0, sizeof(readMessage));
+	SetMessage(readMessage, strategyAccountParampath);
 	apiHandle->RegisterSpi(new MarketSpi);
 	apiHandle->Init();
-	apiHandle->AuthonInfo("55822DC39D9316D5111D9EED00C1CED81B6F0DCEA8D97DDEBD350D939CF8A9D304E3C73A742CFB80");
-	apiHandle->RegisterLoginFront("protocol://222.73.119.230:7003");
+	//apiHandle->AuthonInfo("55822DC39D9316D5111D9EED00C1CED81B6F0DCEA8D97DDEBD350D939CF8A9D304E3C73A742CFB80");
+	//apiHandle->RegisterLoginFront("protocol://222.73.119.230:7003");
+	apiHandle->AuthonInfo(readMessage.m_authorInfor);
+	apiHandle->RegisterLoginFront(readMessage.m_mdFront);
 
 	Sleep(2000);
 	CTShZdReqUserLoginField field;
 	memset(&field, 0, sizeof(CTShZdReqUserLoginField));
-	memcpy(field.UserID, "demo000601", 16);
-	memcpy(field.Password, "123456", 41);
+	//MN003853 - 3857， 密码88888
+	//string m_Account = "MN003853";
+	//string m_Password = "888888";
+	string m_Account = readMessage.m_userId;
+	string m_Password = readMessage.m_passwd;
+	memcpy(field.UserID, m_Account.c_str(), 100);
+	memcpy(field.Password, m_Password.c_str(), 41);
 	apiHandle->ReqUserLogin(&field, 1);
 	Sleep(5000);
 	apiHandle->GetTradingDay();
-	apiHandle->RegisterFront("protocol://222.73.105.170:9002");
+	apiHandle->RegisterFront(readMessage.m_tradeFront);
 
 	Sleep(5000);
-	char *ppInstrumentID[1];
-	string subLMEContracts = "LME,NI3M";
-	ppInstrumentID[0] = (char*)subLMEContracts.c_str();
-	apiHandle->SubscribeMarketData(ppInstrumentID, 1);
+	char *ppContract[2];
+	//string subLMEContracts = "LME,CA3M;LME,AH3M;LME,L-ZS3M;LME,PB3M;LME,NI3M;LME,SN3M";
+	string subLMEContracts = readMessage.m_read_contract0;
+	ppContract[0] = (char*)subLMEContracts.c_str();
+	//string subSGXContracts = "SGX,CN1810";
+	string subSGXContracts = readMessage.m_read_contract1;
+	ppContract[1] = (char*)subSGXContracts.c_str();
+	apiHandle->SubscribeMarketData(ppContract, 2);
 
 
-	if (!kConnector.connect("localhost", 5000))
+	if (!kConnector.connect("localhost", readMessage.m_kdbPort))
 		return -1;
-	kdb::Result res = kConnector.sync("DAQuote:([] Date:();`symbol$Symbol:(); `float$Leg1Bid1:(); `float$Leg1Ask1:(); `float$Leg2Bid1:();`float$Leg2Ask1:())");
-	//kconnector.sync("`DAQuote insert (2018.08.08D08:08:08.888;1.0;1.2;2.0;2.2)");
 
 	while (true)
 	{

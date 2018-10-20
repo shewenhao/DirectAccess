@@ -1,0 +1,9 @@
+2018-8-11 24:2:9 779 |RegisterFront sucess RunThread!
+2018-8-11 24:2:9 779 |ReceiveDataThreadProc Run
+2018-8-11 24:2:14 779 |ask market:MARKET01@@@+@@@@@&LME,SN3M
+2018-8-12 9:2:32 570 |WSARecvFrom error exit thread!:
+2018-8-12 9:2:33 337 |WSARecvFrom error exit thread
+2018-8-12 9:2:44 776 |ReceiveDataThreadProc Run
+2018-8-12 21:29:55 663 |RegisterFront sucess RunThread!
+2018-8-12 21:29:55 663 |ReceiveDataThreadProc Run
+2018-8-12 21:30:0 664 |ask market:MARKET01@@@+@@@@@&LME,SN3M
